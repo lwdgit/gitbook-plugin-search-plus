@@ -1,0 +1,22 @@
+{
+  "name": "gitbook-plugin-search-plus",
+  "version": "0.0.2",
+  "description": "gitbook powerful search plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lwdgit/gitbook-plugin-search-plus.git"
+  },
+  "engines": {
+    "gitbook": ">=3.0.0"
+  },
+  "author": "lwdgit",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/lwdgit/gitbook-plugin-search-plus/issues"
+  },
+  "homepage": "https://github.com/lwdgit/gitbook-plugin-search-plus#readme"
+}
