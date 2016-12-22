@@ -85,10 +85,12 @@ require([
     }
 
     function query(keyword) {
+        if (keyword == null || keyword.trim() === '') return;
+
         var results = [],
             index = -1;
         for (var page in INDEX_DATA) {
-            if ((index = INDEX_DATA[page].body.indexOf(keyword)) !== -1) {
+            if ((index = INDEX_DATA[page].body.toLowerCase().indexOf(keyword.toLowerCase())) !== -1) {
                 results.push({
                     url: page,
                     title: INDEX_DATA[page].title,
@@ -243,7 +245,9 @@ require([
     }
     window.addEventListener('click', function(e) {
         if (e.target.tagName === 'A' && e.target.getAttribute('data-need-reload')) {
-            location.reload();
+            setTimeout(function() {
+                location.reload();
+            }, 100);
         }
     }, true);
 });
