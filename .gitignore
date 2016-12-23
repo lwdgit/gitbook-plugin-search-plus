@@ -24,5 +24,6 @@ node_modules/
 !.gitignore
 !.npmignore
 !.cise.ym
-.history
-.idea
+.history/
+.idea/
+_book/
