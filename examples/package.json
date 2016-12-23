@@ -1,0 +1,38 @@
+{
+  "name": "react-webpack-cookbook",
+  "version": "0.0.0",
+  "description": "React Webpack cookbook",
+  "main": "./index.js",
+  "devDependencies": {
+    "gitbook": "^3.2.2",
+    "gitbook-cli": "^2.3.0"
+  },
+  "scripts": {
+    "start": "gitbook serve",
+    "build": "gitbook build",
+    "watch": "gitbook serve",
+    "gitbook": "gitbook",
+    "postinstall": "npm install gitbook-plugin-search-plus"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/christianalfoni/react-webpack-cookbook.git"
+  },
+  "keywords": [
+    "react",
+    "webpack"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/christianalfoni/react-webpack-cookbook/issues"
+  },
+  "homepage": "https://github.com/christianalfoni/react-webpack-cookbook",
+  "dependencies": {
+    "async": "^0.9.0",
+    "fs-extra": "^0.18.2",
+    "gh-pages": "^0.2.0",
+    "gitbook-cli": "^0.3.3"
+  },
+  "devDependencies": {}
+}

@@ -1,2 +1,4 @@
-!assets/search.css
-less
+.idea
+.history
+*.swp
+/examples
