@@ -1,6 +1,6 @@
 {
   "name": "gitbook-plugin-search-plus",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "gitbook powerful search plugin",
   "main": "index.js",
   "scripts": {
@@ -12,6 +12,9 @@
   },
   "engines": {
     "gitbook": ">=3.0.0"
+  },
+  "dependencies": {
+    "html-entities": "1.2.0"
   },
   "author": "lwdgit",
   "license": "Apache-2.0",
