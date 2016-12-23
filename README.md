@@ -2,7 +2,7 @@
 
 This plugin is a powerful search plugin for GitBook, it adds an interactive search bar to your book
 
-This plugin can search `any text` in your gitbook document.
+This plugin can search `any text` in your gitbook document & `do not need backend server`.
 
 ![](./examples/search.gif)
 
