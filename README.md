@@ -4,6 +4,8 @@ This plugin is a powerful search plugin for GitBook, it adds an interactive sear
 
 This plugin can search `any text` in your gitbook document.
 
+![](./examples/search.gif)
+
 ### Use this plugin
 
  Before use this plugin, you should disable the default search plugin first, 
@@ -24,8 +26,8 @@ This plugin can search `any text` in your gitbook document.
     > cd gitbook-plugin-search-plus/examples
     > npm install
     > npm start
-    > open http://127.0.0.1:4000
 ```
+And then open http://127.0.0.1:4000
 
 ### Thanks To:
 
