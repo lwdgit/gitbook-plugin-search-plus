@@ -1,36 +1,31 @@
-# gitbook-search-plus
+# react-webpack-cookbook - A cookbook for using Webpack with React JS.
 
-This plugin is a powerful search plugin for GitBook, it adds an interactive search bar to your book
+> [Go to cookbook](https://christianalfoni.github.io/react-webpack-cookbook/)
 
-This plugin can search `any text` in your gitbook document & `do not need backend server`.
+> [中文版](https://fakefish.github.io/react-webpack-cookbook/)
 
-![](./examples/search.gif)
+## Contributing
 
-### Use this plugin
+If you notice something to improve, the easiest way to do that is to
 
- Before use this plugin, you should disable the default search plugin first, 
- Here is a `book.json` configuration example:
+1. Fork this repo
+2. Set up a branch
+3. Make the changes (see `/content`)
+4. Submit a PR
 
-```
-{
-    plugins: ["-search", "search-plus"]
-}
-```
+So all in all it's just a regular GitHub PR flow.
 
-> Note: Only gitbook >= 3.0.0 support
+Alternatively you can [open an issue](https://github.com/christianalfoni/react-webpack-cookbook/issues/new) and we'll look into it.
 
-### Examples
+Note that `gh-pages` branch and wiki content gets generated based on the main repository content.
 
-```
-    > git clone git@github.com:lwdgit/gitbook-plugin-search-plus.git
-    > cd gitbook-plugin-search-plus/examples
-    > npm install
-    > npm start
-```
-And then open http://127.0.0.1:4000
+## Gitbook Generator
 
-### Thanks To:
+The generator converts the wiki content to Gitbook (standalone site). In this case it is pushed to `gh-pages`. Use it as follows:
 
-* [gitbook-plugin-lunr](https://github.com/GitbookIO/plugin-lunr)
-* [gitbook-plugin-search](https://github.com/GitbookIO/plugin-search)
+1. `npm install`
+2. `npm run generate-gitbook`
 
+This should generate `/gh-pages`. You can serve that directory through some static server (ie. hit `serve` at `/gh-pages`).
+
+It is possible to deploy the book by hitting `npm run deploy-gitbook`. This will update `gh-pages` branch.
