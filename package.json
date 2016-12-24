@@ -15,7 +15,10 @@
     "watch": "gitbook serve",
     "gitbook": "gitbook"
   },
-  "pre-commit": "build",
+  "pre-commit": {
+    "run": "build",
+    "silent": true
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/christianalfoni/react-webpack-cookbook.git"
