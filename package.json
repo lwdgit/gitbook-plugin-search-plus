@@ -10,9 +10,9 @@
     "pre-commit": "^1.2.2"
   },
   "scripts": {
-    "start": "gitbook serve",
-    "build": "gitbook build",
-    "watch": "gitbook serve",
+    "start": "npm run watch",
+    "build": "gitbook build content book",
+    "watch": "gitbook serve content book",
     "gitbook": "gitbook"
   },
   "pre-commit": {
