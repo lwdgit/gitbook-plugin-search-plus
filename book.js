@@ -4,7 +4,6 @@ module.exports = {
     // Documentation for GitBook is stored under "docs"
     root: './content',
     title: 'test search plus plugin',
-    // Use the "official" theme
     plugins: ['-lunr', '-search','search-plus'],
 
     variables: {
