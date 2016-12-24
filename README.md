@@ -4,7 +4,7 @@ This plugin is a powerful search plugin for GitBook, it adds an interactive sear
 
 This plugin can search `any text` in your gitbook document & `do not need backend server`.
 
-![](./examples/search.gif)
+![](./search.gif)
 
 ### Use this plugin
 
@@ -21,12 +21,15 @@ This plugin can search `any text` in your gitbook document & `do not need backen
 
 ### Examples
 
+Open https://lwdgit.github.io/gitbook-plugin-search-plus/ or test it by yourself
+
 ```
-    > git clone git@github.com:lwdgit/gitbook-plugin-search-plus.git
-    > cd gitbook-plugin-search-plus/examples
+    > git clone git@github.com:lwdgit/gitbook-plugin-search-plus.git -b gh-pages
+    > cd gitbook-plugin-search-plus
     > npm install
     > npm start
 ```
+
 And then open http://127.0.0.1:4000
 
 ### Thanks To:
