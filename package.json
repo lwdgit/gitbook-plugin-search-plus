@@ -6,7 +6,7 @@
   "devDependencies": {
     "gitbook": "^3.2.2",
     "gitbook-cli": "^2.3.0",
-    "gitbook-plugin-search-plus": "^0.0.6",
+    "gitbook-plugin-search-plus": "^0.0.7",
     "pre-commit": "^1.2.2"
   },
   "scripts": {

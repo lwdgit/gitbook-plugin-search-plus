@@ -86,7 +86,7 @@ require([
 
     function escapeReg(keyword) {
         //escape regexp prevserve word
-        return String(keyword).replace(/([\*\.\?\+\$\^\[\]\(\)\{\}\|\/])/g, '\\$1');
+        return String(keyword).replace(/([\*\.\?\+\$\^\[\]\(\)\{\}\|\/\\])/g, '\\$1');
     }
 
     function query(keyword) {
