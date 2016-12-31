@@ -32,7 +32,7 @@ module.exports = {
             text = Html.decode(text);
             // Strip HTML tags
             text = text.replace(/(<([^>]+)>)/ig, '');
-
+            text = text.replace(/[\n ]+/g, ' ');
             var keywords = [];
             if (page.search) {
                 keywords = page.search.keywords || [];
