@@ -84,6 +84,11 @@ require([
         $('body-inner').scrollTop(0);
     }
 
+    function escapeReg(keyword) {
+        //escape regexp prevserve word
+        return String(keyword).replace(/([\*\.\?\+\$\^\[\]\(\)\{\}\|\/])/g, '\\$1');
+    }
+
     function query(keyword) {
         if (keyword == null || keyword.trim() === '') return;
 
@@ -94,7 +99,7 @@ require([
                 results.push({
                     url: page,
                     title: INDEX_DATA[page].title,
-                    body: INDEX_DATA[page].body.substr(Math.max(0, index - 50), MAX_DESCRIPTION_SIZE).replace(new RegExp('(' + keyword + ')', 'gi'), '<span class="search-highlight-keyword">$1</span>')
+                    body: INDEX_DATA[page].body.substr(Math.max(0, index - 50), MAX_DESCRIPTION_SIZE).replace(new RegExp('(' + escapeReg(keyword) + ')', 'gi'), '<span class="search-highlight-keyword">$1</span>')
                 });
             }
         }
@@ -174,7 +179,7 @@ require([
 
     // 高亮文本
     var highLightPageInner = function(keyword) {
-        var reg = new RegExp('(>[^<]*)(' + keyword.replace(/,/, '|') + ')', 'igm');
+        var reg = new RegExp('(>[^<]*)(' + escapeReg(keyword) + ')', 'igm');
         $('.page-inner').html($('.page-inner').html().replace(reg, '$1<span class="search-highlight search-highlight-keyword">$2</span>'));
 
         setTimeout(function() {
