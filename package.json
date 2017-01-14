@@ -4,7 +4,8 @@
   "description": "gitbook powerful search plugin",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pages:commit": "cd examples&&npm install&&npm run build"
   },
   "repository": {
     "type": "git",
@@ -15,6 +16,13 @@
   },
   "dependencies": {
     "html-entities": "1.2.0"
+  },
+  "devDependencies": {
+    "pre-commit": "^1.2.2"
+  },
+  "pre-commit": {
+    "run": ["pages:commit"],
+    "silent": true
   },
   "author": "lwdgit",
   "license": "Apache-2.0",
