@@ -18,7 +18,7 @@
     "gitbook": "gitbook"
   },
   "pre-commit": {
-    "run": ["build", "commit"],
+    //"run": ["build", "commit"],
     "silent": true
   },
   "repository": {
