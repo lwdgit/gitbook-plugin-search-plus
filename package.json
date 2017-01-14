@@ -4,6 +4,7 @@
   "description": "gitbook powerful search plugin",
   "main": "index.js",
   "scripts": {
+    "start": "cd examples&&npm install&&npm start",
     "test": "echo \"Error: no test specified\" && exit 1",
     "add": "git add -A",
     "pages:build": "cd examples&&npm install&&npm run build"
