@@ -13,10 +13,11 @@
     "start": "npm run watch",
     "build": "gitbook build . book --force",
     "watch": "gitbook serve . book --force",
+    "commit": "git add -A"
     "gitbook": "gitbook"
   },
   "pre-commit": {
-    "run": "build",
+    "run": ["build", "commit"]
     "silent": true
   },
   "repository": {
