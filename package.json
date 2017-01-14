@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "add": "git add -A",
     "pages:commit": "cd examples&&npm install&&npm run build"
   },
   "repository": {
@@ -21,7 +22,7 @@
     "pre-commit": "^1.2.2"
   },
   "pre-commit": {
-    "run": ["pages:commit"],
+    "run": ["add", "pages:commit"],
     "silent": true
   },
   "author": "lwdgit",
