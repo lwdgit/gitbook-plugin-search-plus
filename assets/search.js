@@ -81,7 +81,7 @@ require([
             $content.appendTo($li);
             $li.appendTo($searchList);
         });
-        $('body-inner').scrollTop(0);
+        $('.body-inner').scrollTop(0);
     }
 
     function escapeReg(keyword) {
