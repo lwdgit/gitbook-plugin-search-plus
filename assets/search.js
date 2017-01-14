@@ -2,9 +2,7 @@ require([
     'gitbook',
     'jquery'
 ], function(gitbook, $) {
-    var MAX_RESULTS = 100;
     var MAX_DESCRIPTION_SIZE = 500;
-    var events = gitbook.events;
     var state = gitbook.state;
     var INDEX_DATA = {};
     var usePushState = (typeof history.pushState !== 'undefined');
