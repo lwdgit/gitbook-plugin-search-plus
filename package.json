@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "add": "git add -A",
-    "pages:commit": "cd examples&&npm install&&npm run build"
+    "pages:build": "cd examples&&npm install&&npm run build"
   },
   "repository": {
     "type": "git",
@@ -22,7 +22,7 @@
     "pre-commit": "^1.2.2"
   },
   "pre-commit": {
-    "run": ["add", "pages:commit"],
+    "run": ["pages:build", "add"],
     "silent": true
   },
   "author": "lwdgit",
