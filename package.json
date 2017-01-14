@@ -11,8 +11,8 @@
   },
   "scripts": {
     "start": "npm run watch",
-    "build": "gitbook build . book",
-    "watch": "gitbook serve . book",
+    "build": "gitbook build . book --force",
+    "watch": "gitbook serve . book --force",
     "gitbook": "gitbook"
   },
   "pre-commit": {
