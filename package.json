@@ -1,25 +1,38 @@
 {
-  "name": "gitbook-plugin-search-plus",
-  "version": "0.0.9",
-  "description": "gitbook powerful search plugin",
-  "main": "index.js",
+  "name": "react-webpack-cookbook",
+  "version": "0.0.0",
+  "description": "React Webpack cookbook",
+  "main": "./index.js",
+  "devDependencies": {
+    "gitbook": "^3.2.2",
+    "gitbook-cli": "^2.3.0",
+    "gitbook-plugin-search-plus": "^0.0.8",
+    "gitbook-plugin-fontsettings": "^2.0.0",
+    "pre-commit": "^1.2.2"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run watch",
+    "build": "npm run cli build . book --force",
+    "watch": "npm run cli serve . book --force",
+    "commit": "git add -A",
+    "cli": "node ./cli.js"
+  },
+  "pre-commit": {
+    "run": ["build", "commit"],
+    "silent": true
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lwdgit/gitbook-plugin-search-plus.git"
+    "url": "https://github.com/christianalfoni/react-webpack-cookbook.git"
   },
-  "engines": {
-    "gitbook": ">=3.0.0"
-  },
-  "dependencies": {
-    "html-entities": "1.2.0"
-  },
-  "author": "lwdgit",
-  "license": "Apache-2.0",
+  "keywords": [
+    "react",
+    "webpack"
+  ],
+  "author": "",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lwdgit/gitbook-plugin-search-plus/issues"
+    "url": "https://github.com/christianalfoni/react-webpack-cookbook/issues"
   },
-  "homepage": "https://github.com/lwdgit/gitbook-plugin-search-plus#readme"
+  "homepage": "https://github.com/christianalfoni/react-webpack-cookbook"
 }
