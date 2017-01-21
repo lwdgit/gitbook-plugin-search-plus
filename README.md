@@ -12,7 +12,7 @@ With it You can search `any characters` in your gitbook document.
 
 ```
 {
-    plugins: ["-search", "search-plus"]
+    plugins: ["-lunr", "-search", "search-plus"]
 }
 ```
 
@@ -40,4 +40,4 @@ And then open http://127.0.0.1:4000
 
 * [gitbook-plugin-lunr](https://github.com/GitbookIO/plugin-lunr)
 * [gitbook-plugin-search](https://github.com/GitbookIO/plugin-search)
-
+* [mark.js](https://github.com/julmot/mark.js)
