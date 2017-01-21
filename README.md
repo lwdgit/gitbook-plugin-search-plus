@@ -12,7 +12,7 @@ With it You can search `any characters` in your gitbook document.
 
 ```
 {
-    plugins: ["-search", "search-plus"]
+    plugins: ["-lunr", "-search", "search-plus"]
 }
 ```
 
