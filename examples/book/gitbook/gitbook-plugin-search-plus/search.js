@@ -82,9 +82,9 @@ require([
         $('.body-inner').scrollTop(0);
     }
 
-    function escapeReg(keyword) {
+    function escapeRegExp(keyword) {
         //escape regexp prevserve word
-        return String(keyword).replace(/([\*\.\?\+\$\^\[\]\(\)\{\}\|\/\\])/g, '\\$1');
+        return String(keyword).replace(/([-.*+?^${}()|[\]\/\\])/g, '\\$1');
     }
 
     function query(keyword) {
@@ -97,7 +97,9 @@ require([
                 results.push({
                     url: page,
                     title: INDEX_DATA[page].title,
-                    body: INDEX_DATA[page].body.substr(Math.max(0, index - 50), MAX_DESCRIPTION_SIZE).replace(new RegExp('(' + escapeReg(keyword) + ')', 'gi'), '<span class="search-highlight-keyword">$1</span>')
+                    body: INDEX_DATA[page].body.substr(Math.max(0, index - 50), MAX_DESCRIPTION_SIZE)
+                    .replace(/^[^\s,.]+./,'').replace(/(..*)[\s,.].*/, '$1') //prevent break word
+                    .replace(new RegExp('(' + escapeRegExp(keyword) + ')', 'gi'), '<span class="search-highlight-keyword">$1</span>')
                 });
             }
         }
