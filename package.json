@@ -1,6 +1,6 @@
 {
   "name": "gitbook-plugin-search-plus",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "gitbook powerful search plugin",
   "main": "index.js",
   "scripts": {
