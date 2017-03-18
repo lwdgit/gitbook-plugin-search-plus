@@ -1,12 +1,12 @@
-var pkg = require('./package.json');
+var pkg = require('./package.json')
 
 module.exports = {
-    root: './content',
-    output: './book',
-    title: 'test search plus plugin',
-    plugins: ['-lunr', '-search','search-plus','fontsettings'],
+  root: './content',
+  output: './book',
+  title: 'test search plus plugin',
+  plugins: ['-lunr', '-search', 'search-plus', 'fontsettings'],
 
-    variables: {
-        version: pkg.version
-    }
-};
+  variables: {
+    version: pkg.version
+  }
+}
