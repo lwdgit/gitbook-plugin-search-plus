@@ -1,9 +1,13 @@
 # gitbook-search-plus
 
-This plugin is a powerful search plugin for GitBook.
+Search plus.
 
-With it You can search `any characters` in your gitbook document.
 
+### Features
+
+    * Search any character
+    * Search across element (for search code)
+    * Remember search url
 
 ### Use this plugin
 
@@ -20,9 +24,9 @@ With it You can search `any characters` in your gitbook document.
 
 ### Examples
 
-[![](./search.gif)](https://lwdgit.github.io/gitbook-plugin-search-plus/)
-[![](./search2.gif)](https://lwdgit.github.io/gitbook-plugin-search-plus/)
-[![](./search3.gif)](https://lwdgit.github.io/gitbook-plugin-search-plus/book/?q=%E8%BF%99%E6%9C%AC%E5%B0%8F%E4%B9%A6%E7%9A%84%E7%9B%AE%E7%9A%84%E6%98%AF%E5%BC%95%E5%AF%BC%E4%BD%A0%E8%BF%9B%E5%85%A5%20React%20%E5%92%8C%20Webpack%20%E7%9A%84%E4%B8%96%E7%95%8C)
+[![](https://github.com/lwdgit/gitbook-plugin-search-plus/raw/master/search.gif)](https://lwdgit.github.io/gitbook-plugin-search-plus/)
+[![](https://github.com/lwdgit/gitbook-plugin-search-plus/raw/master/search2.gif)](https://lwdgit.github.io/gitbook-plugin-search-plus/)
+[![](https://github.com/lwdgit/gitbook-plugin-search-plus/raw/master/search3.gif)](https://lwdgit.github.io/gitbook-plugin-search-plus/book/?q=%E8%BF%99%E6%9C%AC%E5%B0%8F%E4%B9%A6%E7%9A%84%E7%9B%AE%E7%9A%84%E6%98%AF%E5%BC%95%E5%AF%BC%E4%BD%A0%E8%BF%9B%E5%85%A5%20React%20%E5%92%8C%20Webpack%20%E7%9A%84%E4%B8%96%E7%95%8C)
 
 
 Open [https://lwdgit.github.io/gitbook-plugin-search-plus/](https://lwdgit.github.io/gitbook-plugin-search-plus/book/?q=%E8%BF%99%E6%9C%AC%E5%B0%8F%E4%B9%A6%E7%9A%84%E7%9B%AE%E7%9A%84%E6%98%AF%E5%BC%95%E5%AF%BC%E4%BD%A0%E8%BF%9B%E5%85%A5%20React%20%E5%92%8C%20Webpack%20%E7%9A%84%E4%B8%96%E7%95%8C) or test it by yourself
