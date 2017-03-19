@@ -1,7 +1,6 @@
 # gitbook-search-plus
 
-Search plus.
-
+A powerful search plugin for GitBook.
 
 ### Features
 
