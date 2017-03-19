@@ -1,6 +1,6 @@
 # gitbook-search-plus
 
-This plugin is a powerful search plugin for GitBook.
+A powerful search plugin for GitBook.
 
 With it You can search `any characters` in your gitbook document.
 
