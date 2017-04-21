@@ -1,3 +1,9 @@
+---
+search:
+    keywords: ['meta', 'react']
+
+---
+
 I remember when I saw React the first time around the time it was announced I was skeptical. Particularly mixing some sort of HTML within your code seemed against good conventions. It just felt like a "bad idea"&reg;.
 
 我记得当我第一次看到 React 的时候是十分怀疑的，特别是把 HTML 揉进代码里违背了传统的那些约定，看起来像是一个 “坏主意”。

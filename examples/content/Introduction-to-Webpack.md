@@ -1,3 +1,9 @@
+---
+search:
+    keywords: ['webpack', 'meta']
+
+---
+
 In web development we deal with a lot of small technical artifacts. You use HTML to describe page structure, CSS how to style it and JavaScript for logic. Or you can replace HTML with something like Jade, CSS with Sass or LESS, JavaScript with CoffeeScript, TypeScript and the ilk. In addition you have to deal with project dependencies (ie. external libraries and such).
 
 在 Web 开发历程上，我们构建了很多小型的技术解决方案，比如用 HTML 去描述页面结构，CSS 去描述页面样式，JavaScript 去描述页面逻辑，或者你也可以用一些比如 Jade 去取代 HTML，用 Sass 或 Less 去取代CSS，用 CoffeeScript 或者 TypeScript 之类的去取代 JavaScript，不过项目中的依赖可能是一件比较烦恼的事情。（需要安装额外很多的库）

@@ -1,6 +1,6 @@
 ---
 search:
-    keywords: ['keyword1', 'meta']
+    keywords: ['readme', 'meta']
 ---
 
 
