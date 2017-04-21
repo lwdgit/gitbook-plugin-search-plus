@@ -99,8 +99,9 @@ require([
       if (store.keywords && ~store.keywords.split(/\s+/).indexOf(keyword.split(':').pop())) {
         if (/.:./.test(keyword)) {
           keyword = keyword.split(':').slice(0, -1).join(':')
+        } else {
+          hit = true
         }
-        hit = true
       }
       var keywordRe = new RegExp('(' + escapeRegExp(keyword) + ')', 'gi')
       if (
