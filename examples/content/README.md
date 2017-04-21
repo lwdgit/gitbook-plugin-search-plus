@@ -1,3 +1,8 @@
+---
+search:
+    keywords: ['keyword1', 'meta']
+---
+
 
 [Gitbook 英文原版](http://christianalfoni.github.io/react-webpack-cookbook/)
 =======
