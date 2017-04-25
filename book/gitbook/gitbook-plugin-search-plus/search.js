@@ -190,13 +190,18 @@ require([
     })
   })
 
+  var markConfig = {
+    'ignoreJoiners': true,
+    'acrossElements': true,
+    'separateWordSearch': false
+  }
   // highlight
   var highLightPageInner = function (keyword) {
-    $('.page-inner').mark(keyword, {
-      'ignoreJoiners': true,
-      'acrossElements': true,
-      'separateWordSearch': false
-    })
+    var pageInner = $('.page-inner')
+    if (/(?:(.+)?\:)(.+)/.test(keyword)) {
+        pageInner.mark(RegExp.$1, markConfig)
+    }
+    pageInner.mark(keyword, markConfig)
 
     setTimeout(function () {
       var mark = $('mark[data-markjs="true"]')
